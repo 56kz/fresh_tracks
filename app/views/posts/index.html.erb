@@ -1,23 +1,20 @@
-
 <div class="container">
   <div class="row">
-    <div class="col-sm-6 col-sm-offset-3">
-      <h1>#FreshTracks</h1>
-      <h1>Posts</h1>
-      <table>
-      <tr>
-    <th>Nombre</th>
-    <th>URL</th>
-    <th>Descripción</th>
-  </tr>
-  <% @posts.each do |p| %>
-    <tr>
-      <td><%= p.name %></td>
-      <td><%= p.url %></td>
-      <td><%= p.description %></td>
-    </tr>
-  <% end %>
-</table>
-    </div>
+    <div class="col-sm-8 col-sm-offset-2">
+     <h1><strong>#Freshtracks</strong></h1>
+     <div class="text-right">
+       <%= link_to "Publicar #Freshtrack", new_post_path, class: "btn btn-primary" %>
+     </div>
+
+    <% @posts.each do |p| %>
+     <iframe src="<%= p.url %>" width="100%" height="325"></iframe>
+     <div class="panel panel-primary">
+       <div class="panel-heading text-center"><%= p.name %></div>
+       <div class="panel-body text-center"><%= p.description %></div>
+     </div>
+     <% end %>
+
+   </div>
+
   </div>
 </div>
