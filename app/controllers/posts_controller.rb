@@ -12,8 +12,12 @@ class PostsController < ApplicationController
     if @post.save
       redirect_to posts_path, notice: "#Freshtrack publicado con éxito"
     else
-      render :new  
+      render :new
     end
+  end
+
+  def show
+    @post = Post.find(params[:id])
   end
 
   private
