@@ -6,7 +6,9 @@
         <div class="panel-heading text-center"><%= @post.name %></div>
         <div class="panel-body text-center"><%= @post.description %></div>
       </div>
-
+      <div class="text-left">
+         <%= link_to 'Editar', edit_post_path(@post), class: "btn btn-primary" %>
+      </div>
     </div>
   </div>
 </div>
