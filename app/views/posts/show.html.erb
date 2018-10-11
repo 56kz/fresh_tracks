@@ -8,6 +8,7 @@
       </div>
       <div class="text-left">
          <%= link_to 'Editar', edit_post_path(@post), class: "btn btn-primary" %>
+         <%= link_to 'Eliminar', @post, method: :delete, data: { confirm: "Seguro deseas eliminar este post?" }, class: "btn btn-danger" %>
       </div>
     </div>
   </div>
