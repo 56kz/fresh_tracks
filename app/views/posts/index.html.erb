@@ -1,1 +1,18 @@
 <h1>#FreshTracks</h1>
+
+<h1>Posts</h1>
+
+<table>
+  <tr>
+    <th>Nombre</th>
+    <th>URL</th>
+    <th>Descripción</th>
+  </tr>
+  <% @posts.each do |p| %>
+    <tr>
+      <td><%= p.name %></td>
+      <td><%= p.url %></td>
+      <td><%= p.description %></td>
+    </tr>
+  <% end %>
+</table>
