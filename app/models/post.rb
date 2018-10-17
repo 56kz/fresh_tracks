@@ -11,4 +11,8 @@
 #
 
 class Post < ActiveRecord::Base
+  validates :name, presence: true
+  validates :url, presence: true
+  validates :description, presence: true
+  #pata que name y url, description, sean obligatorios
 end
