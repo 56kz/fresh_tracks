@@ -1,24 +1,25 @@
 .posts {
-  margin-top: 40px;
+  margin-top: 15px;
   text-align: center;
 
   .post {
-    padding: 15px 10px;
-    border-radius: 5px;
+    padding: 9px 7px;
+    border-radius: 8px;
 
     &:hover{ background: #DCDCD9; }
 
-    .post-title a {
+    .post-title a{
      color: #303030;
-     font-size: 18px;
+     font-size: 16px;
      line-height: 2;
 
-    &:hover, &:focus { color: #18B2AB; text-decoration: none; }
+     &:hover, &:focus { color: #18B2AB; text-decoration: none; }
     }
-    .post-description {
+
+   .post-description {
       display: block;
       color: #636d6d;
-      font-size: 16px;
+      font-size: 14px;
       line-height: 1;
     }
 
@@ -30,20 +31,20 @@
     background: #303030;
     color: #fafaf2;
     text-align: center;
-    padding: 100px 25px;
+    padding: 25px 25px;
     margin-top: -20px;
     margin-bottom: 15px;
 
     .post-name {
-      font-size: 24px;
+      font-size: 18px;
       margin-top: 0;
     }
 
     .post-description {
-      font-size: 18px;
+      font-size: 16px;
       color: #000000;
-      margin-top: 15px;
-      margin-bottom: 30px;
+      margin-top: 10px;
+      margin-bottom: 20px;
     }
 
     .btn-primary {
@@ -57,30 +58,39 @@
   }
 }
 
-.votes {
-  margin-bottom: 20px;
-  padding: 0 25px;
+.vote-com {
 
-  h2 {
-    color: #666;
-    font-size: 20px;
-    margin-bottom: 10px;
+  background: #EFEFEF;
+  color: #000000;
+  text-align: center;
+  padding: 25px 25px;
+
+  margin-bottom: 15px;
+
+  .votes {
+    margin-bottom: 20px;
+    padding: 0 25px;
+
+    h2 {
+      color: #666;
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
   }
 
-  img { width: 40px; }
-}
+  .comments {
+    padding: 0 25px;
 
-.comments {
-  padding: 0 25px;
+    h2 {
+      color: #666;
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
 
-  h2 {
-    color: #666;
-    font-size: 20px;
-    margin-bottom: 10px;
-  }
-
-  img {
-    width: 25px;
-    margin: -3px 10px 0 -3px;
+    img {
+      width: 25px;
+      margin: -3px 10px 0 -3px;
+    }
   }
 }

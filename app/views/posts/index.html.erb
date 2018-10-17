@@ -1,20 +1,19 @@
 <div class="container">
   <div class="row">
     <div class="col-sm-8 col-sm-offset-2">
-     <h1 style="text-align: center"><strong>#Freshtracks</strong></h1>
       <div class="posts">
 
        <% @posts.each do |post| %>
        <div class="post clearfix">
 
-         <iframe src="<%= post.url %>" width="100%" height="325"></iframe>
-         <div class="post-details">
+         <iframe src="<%= post.url %>" width="100%" height="250"></iframe>
+
 
          <div class="panel panel-default">
-         <div class="panel-heading post-title"><%=link_to post.name, post %></div>
+         <div class="panel-heading post-title"><strong><%=link_to post.name.upcase , post %></strong></div>
          <div class="panel-body post-description"><%= post.description %></div>
 
-       </div>
+
        </div>
      </div>
     <% end %>
@@ -22,6 +21,6 @@
        <%= link_to "Publicar #Freshtrack", new_post_path, class: "btn btn-primary" %>
      </div>
    </div>
-   </div>
+  </div>
 
 </div>
