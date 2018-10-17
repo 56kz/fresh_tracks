@@ -1,6 +1,17 @@
 <div class="container">
   <div class="row">
     <div class="col-sm-6 col-sm-offset-3">
+      <% if @user.errors.any? %>
+        <div class="alert alert-danger">
+          <ul>
+            <% @user.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+            <% end %>
+          </ul>
+        </div>
+      <% end %>
+
+
       <h1>Crear Cuenta</h1>
 
       <%= form_for @user do |f| %>
