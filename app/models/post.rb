@@ -14,9 +14,13 @@
 class Post < ActiveRecord::Base
   belongs_to :user
   has_many :comments
+  has_many :votes
 
   validates :name, presence: true
   validates :url, presence: true
   validates :description, presence: true
-  #pata que name y url, description, sean obligatorios
+
+  def voted_by?(user)    
+    votes.exists?(user: user)
+  end
 end
