@@ -9,9 +9,9 @@ class SessionsController < ApplicationController
   user = User.find_by(email: params[:email])
     if user && user.authenticate(params[:password])
       sign_in(user)
-      redirect_to root_path, notice:  "Welcome!"
+      redirect_to root_path, notice:  "Bienvenido!"
     else
-      redirect_to login_path, notice: "Datos incorrectos, intenta de nuevo!"
+      redirect_to login_path, notice: "Tu email y/o contraseña son inválidas. Intenta nuevamente."
     end
   end
 
