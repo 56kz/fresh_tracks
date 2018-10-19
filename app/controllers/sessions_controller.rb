@@ -9,9 +9,9 @@ class SessionsController < ApplicationController
   user = User.find_by(email: params[:email])
     if user && user.authenticate(params[:password])
       sign_in(user)
-      redirect_to root_path
+      redirect_to root_path, notice:  "Welcome!"
     else
-      render :new
+      redirect_to login_path, notice: "Datos incorrectos, intenta de nuevo!"
     end
   end
 

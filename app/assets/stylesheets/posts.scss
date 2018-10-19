@@ -7,7 +7,7 @@
     padding: 9px 7px;
     border-radius: 8px;
 
-    &:hover{ background: #DCDCD9; }
+    &:hover{ background: #7F7F7F; }
 
     .post-upvote {
   position: relative;
@@ -19,19 +19,19 @@
   width: 35px;
 
   .upvote-arrow {
-    border-bottom: 9px solid #534540;
+    border-bottom: 9px solid #ffffff;
     border-left: 7px solid transparent;
     border-right: 7px solid transparent;
     border-top: 9px solid transparent;
     left: 10px;
     position: absolute;
     top: 0px;
-    
+
   }
 
   .upvote-count {
     display: block;
-    color: #303030;
+    color: #ffffff;
     font-size: 14px;
     font-weight: bold;
     line-height: 1;
@@ -50,7 +50,7 @@
      font-size: 16px;
      line-height: 2;
 
-     &:hover, &:focus { color: #18B2AB; text-decoration: none; }
+     &:hover, &:focus { color: #ED7710; text-decoration: none; }
     }
 
    .post-description {
