@@ -25,8 +25,8 @@
        <div class="votes">
          <h2>Votos</h2>
          <% @post.votes.each do |vote| %>
-  <img src="<%= Gravatar.new("#{vote.user.email}").image_url %>" class="img-circle" />
-<% end %>
+         <img src="<%= Gravatar.new("#{vote.user.email}").image_url %>" class="img-circle" />
+         <% end %>
        </div>
 
        <div class="comments">
