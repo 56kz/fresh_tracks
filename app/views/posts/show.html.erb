@@ -4,7 +4,7 @@
       <iframe src="<%= @post.url %>" width="100%" height="350"></iframe>
       <div class="panel panel-primary">
         <div class="panel-heading post-name"><%= @post.name %></div>
-        <div class="panel-body post-description"><%= @post.description %></div>
+        <div class="panel-body post-description"><%= markdown(@post.description) %></div>
         <% if signed_in?  && @post.user == current_user %>
         <div class="actions justify-content-end">
           <%= link_to "<span class='glyphicon glyphicon-pencil'></span>".html_safe, edit_post_path(@post) %>

@@ -28,6 +28,10 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'gravatar-ultimate'
 gem 'xmlrpc'
 gem 'annotate'
+gem 'redcarpet'
+gem 'nifty-generators'
+gem 'albino'
+gem 'nokogiri'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
