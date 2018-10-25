@@ -18,8 +18,7 @@ class Post < ActiveRecord::Base
 
   validates :name, presence: true
   validates :url, presence: true
-  validates :description, presence: true
-   # length: { minimum: 250 }
+  validates :description, presence: true, length: { minimum: 250 }
 
   def voted_by?(user)
     votes.exists?(user: user)

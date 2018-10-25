@@ -34,7 +34,7 @@
          <% @post.comments.each do |comment| %>
             <div class="panel panel-default">
               <header class="panel-heading"><img src="<%= Gravatar.new("#{comment.user.email}").image_url %>" class="img-circle" /> <%= comment.user.name %></header>
-              <div class="panel-body"><%= comment.body %></div>
+              <div class="panel-body"><%= markdown(comment.body) %></div>
             </div>
           <% end %>
 
